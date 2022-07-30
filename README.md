@@ -72,7 +72,67 @@ Thus, it can be said that Algorithmic Attribution Models provides an accurate at
 Few of the models, which are Data Driven Attribution Models are:
 1.	Logistic Regression Model
 2.	LSTM (Long Short – Term Memory) Model
-3.	LSTM with Attention
+3.	LSTM with Attention.
+
+Objective of the Project:
+
+1.	To predict conversion using logistic regression and use regression coefficients as attribution weights for marketing budget allocation. 
+2.	To compare weights of traditionally used Last touch attribution model against data driven model (logistic regression)
+3.	Evaluate return on investment (ROI) for each of these models
+Collection and Preliminary Analysis of Data:
+Data is obtained from Criteo . The data represents live 30 days live traffic. Each record corresponds to an impression that is displayed to user. Each of these impressions consist of information about context, if it was clicked, if it led to conversion, if the conversion was attributed to Criteo or not. 
+We will train and tes our models using an online advertising dataset published by Criteo (Lab, 2017). This data consist of 16 million impressions (events), each of which has multiple variables
+
+Data Models:
+
+Last Touch Attribution (LTA):
+As mentioned, the Last Touch Attribution model gives 100% credit to the last touchpoint before conversion. So, for the 10 campaigns selected above, the last campaign viewed by the users were identified through timestamps and users who converted were identified. Thus, the campaign impressions and the converted impressions were separated. Then, to get the weightage for the last touchpoint, the converted impressions were divided by the campaign impressions.   
+The extracted weights for the selected 10 campaigns from this model were: 
+
+![Picture8](https://user-images.githubusercontent.com/37044895/181925820-a2b3d411-53e3-47b2-aa1c-4e41e75120ec.png)
+ 
+Logistic Regression: 
+In this, each campaign is represented by a binary feature and each consumer journey is assumed to be a vector of features. Thus the journey can be visualised as a vector that that is stacked with campaigns, which in turn is stacked with features. With the data available, a regression model is fit to predict conversions (1 or 0), and the resulting coefficients are used as attribution weights. (Katsov, 2019)
+
+![Picture9](https://user-images.githubusercontent.com/37044895/181925835-a6448e4b-cc12-4f36-86b5-09079fb1da67.png)
+
+ 
+Source: (Katsov, 2019)
+Hence, the second baseline model that we built was a simple logistic regression model (Attribution Modeling Budget Optimization, 2020). As mentioned above, unlike position-based models, which give pre-determined attribution to the touchpoints, regression analysis tries to calculate the true contribution of the touchpoints.
+We applied the aggregation strategy – created one hot-encoded event vector of features, which are then aggregated into many hot vectors. This stack will have the summation of number of clicks and the costs. 
+The Extracted weights for the selected 10 campaigns from the logistic regression model are as follows:
+
+![Picture10](https://user-images.githubusercontent.com/37044895/181925914-5a004f9c-c9fd-4064-ac79-b56d110aafb7.png)
+
+ROI through Simulation:
+The simulation that we carried out for calculating the ROI can be summarised as below:
+Initially, we distributed a limited budget across the different campaigns as per the attribution weights obtained through the models. Then, we replayed the available historical data, in order of their timestamp. If and when the campaign exhausts the limited budget allotted to it, the simulation is stopped and the remaining events associated with it are not replayed. Then, the probabilities of conversion of all journeys affected by this campaign suppression is estimated. 
+Finally, we counted the total number of conversions and then estimated ROI. If all the campaigns runs it journey without shortage of money, then the conversion is counted explicitly. Else, the estimate of conversion probability is used. 
+We also looked into tuning the parameter(p=pitch). This parameter controls the "pitch" of the budget distribution. (Katsov, 2019). Lesser value of pitch mean more even distribution of budget across different campaign verses higher value denotes more uneven distribution of budget.
+Pitch=1 means using the original weights which may not be optimal. Thus, we try out different values of Pitch between 0.5 to 3 to evaluate the ROI with different budget distribution.
+Note: For ROI simulation we got the weights of LTA and Logistics regression model by using 400 campaign instead of 10 campaign for a robust output. Below are the ROI based on the same.
+
+Outputs:
+Model Comparison:  We can compare these weights with the LTA weights computed in the previous section:
+
+![Picture11](https://user-images.githubusercontent.com/37044895/181925951-3b83245f-d3dd-4337-a68e-6fc76f37515d.png)
+ 
+The attribution weights produced by two models are highly correlated, although significant differences exist with some campaigns.
+It can be observed that for campaigns 1, 2,7 and 8 weights attributed by LTA model is high when compared to other campaigns. However logistic model attributes relatively lesser weights to these campaigns. The model indicates that all campaigns attribute fairly towards conversion and attributing weights using LTA model might negatively impact conversion as campaigns which are precursor to last campaign leading to conversion will be missed out/ given lower weight.
+We have used a relatively simple model however this can be improved through more elaborate feature engineering steps by understanding importance of feature using different data modelling technique and then creating logistic regression. 
+
+Budget Allocation Simulation: 
+Here we plot the return of investment calculated using simulation for different budget distribution for LTA and Lodistic Regression. We observe that for evenly distributed buget ROI of Data-Driven model is greater than ROI of LTA.
+
+![Picture12](https://user-images.githubusercontent.com/37044895/181926002-a177f8b0-f36e-47b6-8cd2-391eba2d391b.png)
+
+Insights and Recommendations:
+1.	We saw the weights attributed to campaigns in Logistic model is significantly different than those attributed using LTA model. Therefore it can be said that all campaigns which are part of customer journey play a role in leading to conversion. Hence, only the campaigns which are part of customer journey for successful conversions should be taken into account while attributing budget. The weights of attributed to campaign could be built on the coefficients of logistic model instead of LTA.
+
+2.	On doing a cost benefit analysis using Logistic and LTA model we saw the ROI of logistic model to be consistently higher than that of LTA. This re-affirms the finding that a data driven model would enable firms to allocate budget to campaigns/channels which attribute to conversions both directly and indirectly.
+
+3.	This project can we extended to comparing different data driven model with traditionally used attribution models to drive marketing budget allocation strategies.
+
 
 References:
 
