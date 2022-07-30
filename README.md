@@ -75,6 +75,7 @@ Few of the models, which are Data Driven Attribution Models are:
 3.	LSTM with Attention
 
 References:
+
 Lord, J. (2012, November 27). The Importance of Marketing Analytics. Retrieved from moz.com: https://moz.com/blog/the-importance-of-marketing-analytics
 Marketing analytics: definition and uses. (n.d.). Retrieved from stitchdata.com: https://www.stitchdata.com/resources/marketing-analytics/#:~:text=Benefits%20of%20marketing%20analytics&text=Marketing%20analytics%20tools%20improve%20lead,into%20customer%20behavior%20and%20preferences.
 Marketing Attribution: A Guide to Models, Tools, and Strategy. (n.d.). Retrieved from marketingevolution: https://www.marketingevolution.com/marketing-essentials/marketing-attribution
