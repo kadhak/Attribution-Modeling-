@@ -17,10 +17,13 @@ There are many attribution models available. Each model has a different distribu
 •	First Touch Attribution: As the name suggests, this model gives 100% credit to the first touchpoint. It assumes that the customer chose to convert after the first impression, even though the customer may have encountered other campaigns later. 
 
 •	Last touch Attribution: Similarly, the last touch attribution model gives 100% credit to the last touchpoint of the customer, before they convert. This doesn’t account for the previous touchpoints that lead to the final touchpoint. 
+
 ![Picture2](https://user-images.githubusercontent.com/37044895/181918417-79f588b0-10ca-4819-914e-37bc570cc4b0.png) 
+
 Figure 2: First Touch Attribution Model	    
 
 ![Picture3](https://user-images.githubusercontent.com/37044895/181918429-cfb13a04-943e-4ff6-88d0-eaee9050ddf0.png)
+
 Figure 3: Last Touch Attribution Model
 
 Limitations
@@ -31,19 +34,25 @@ The single touch attribution models, although easy to comprehend and measure, ha
 •	Linear Attribution: Linear attribution models gives equal weightage to each of the touchpoints engaged with by the customer which finally leads to conversion. The figure 4 shows four touchpoints and hence a weightage of 25% to each of them, according to the linear attribution model. 
 
 •	U-shape Attribution: this model gives more weightage to the first and the last touchpoint.It assumes that the first and last touchpoints are the most impactful in the customer buying decision. Refer to figure 5.
-![Picture4](https://user-images.githubusercontent.com/37044895/181918462-64765a7e-1253-44fa-b2dd-97cd611308c9.png)                                         
+
+![Picture4](https://user-images.githubusercontent.com/37044895/181918462-64765a7e-1253-44fa-b2dd-97cd611308c9.png)  
+
 Figure 4: Linear Attribution Model  
 
 ![Picture5](https://user-images.githubusercontent.com/37044895/181918471-efaf6a1a-abbb-4d0f-ae0f-fd6183103177.png)
+
 Figure 5: U Shaped Attribution Model
 
 •	Time Decay Attribution: Unlike the above models, this model gives different weightage to each of the touchpoints. However, the time decay model places the maximum weight to the touchpoint closer to the conversion and minimum weightage to the prior touchpoints. This model assumes that the last touchpoint had the greatest impact on the conversion. Refer Figure 6. 
 
 •	W-Shaped Attribution Model: This model is very similar to the U-shaped model, except it adds another important touchpoint – the opportunity stage. Thus, the first touch, the last touch and the opportunity creation gets the highest weightage and the rest of them gets lower weightages.
+
 ![Picture6](https://user-images.githubusercontent.com/37044895/181918483-b0bea8f0-6619-4dbc-bca6-e3d82c1a1562.png)
+
 Figure 6: Time Decay Attribution Model	
 
-![Picture7](https://user-images.githubusercontent.com/37044895/181918489-e270a510-629a-43e7-9ee7-e3a7af3d62f6.png)                  
+![Picture7](https://user-images.githubusercontent.com/37044895/181918489-e270a510-629a-43e7-9ee7-e3a7af3d62f6.png)
+
 Figure 7: W Shaped Attribution Model
 
 The U-shaped and W-shaped attribution models are also called position – based attribution models because each touchpoint is given a certain credit based on it position in the customer funnel. (Sovik, n.d.)
