@@ -2,6 +2,7 @@
 An organization may run multiple campaigns on multiple platforms for one product, for example search ads, display ads, direct emails, TV ads, Newspaper ads, etc. The customer may be exposed to many of these campaigns before they make the final purchase. Each of these touchpoints helps the customer reach their final decision of investment, which is then called a conversion.
 For example, a customer may have first heard about Product A through a newspaper ad and then visited the website. However, the conversion may not happen immediately. The customer may just look at the website and leave. And then maybe she looks at a TV advertisement a few days later and revisits the website. This time, she purchases Product A, thereby finally converting. This scenario is shown in the below figure. 
 
+![Picture1](https://user-images.githubusercontent.com/37044895/181918329-bfe9ba8d-cbbf-42f6-bdc2-79c4a5ebcb85.png)
 
 Figure 1: Customer Buying Journey
 
