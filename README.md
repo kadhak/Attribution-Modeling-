@@ -105,6 +105,7 @@ The Extracted weights for the selected 10 campaigns from the logistic regression
 ![Picture10](https://user-images.githubusercontent.com/37044895/181925914-5a004f9c-c9fd-4064-ac79-b56d110aafb7.png)
 
 ROI through Simulation:
+
 The simulation that we carried out for calculating the ROI can be summarised as below:
 Initially, we distributed a limited budget across the different campaigns as per the attribution weights obtained through the models. Then, we replayed the available historical data, in order of their timestamp. If and when the campaign exhausts the limited budget allotted to it, the simulation is stopped and the remaining events associated with it are not replayed. Then, the probabilities of conversion of all journeys affected by this campaign suppression is estimated. 
 Finally, we counted the total number of conversions and then estimated ROI. If all the campaigns runs it journey without shortage of money, then the conversion is counted explicitly. Else, the estimate of conversion probability is used. 
@@ -113,6 +114,7 @@ Pitch=1 means using the original weights which may not be optimal. Thus, we try 
 Note: For ROI simulation we got the weights of LTA and Logistics regression model by using 400 campaign instead of 10 campaign for a robust output. Below are the ROI based on the same.
 
 Outputs:
+
 Model Comparison:  We can compare these weights with the LTA weights computed in the previous section:
 
 ![Picture11](https://user-images.githubusercontent.com/37044895/181925951-3b83245f-d3dd-4337-a68e-6fc76f37515d.png)
@@ -127,6 +129,7 @@ Here we plot the return of investment calculated using simulation for different 
 ![Picture12](https://user-images.githubusercontent.com/37044895/181926002-a177f8b0-f36e-47b6-8cd2-391eba2d391b.png)
 
 Insights and Recommendations:
+
 1.	We saw the weights attributed to campaigns in Logistic model is significantly different than those attributed using LTA model. Therefore it can be said that all campaigns which are part of customer journey play a role in leading to conversion. Hence, only the campaigns which are part of customer journey for successful conversions should be taken into account while attributing budget. The weights of attributed to campaign could be built on the coefficients of logistic model instead of LTA.
 
 2.	On doing a cost benefit analysis using Logistic and LTA model we saw the ROI of logistic model to be consistently higher than that of LTA. This re-affirms the finding that a data driven model would enable firms to allocate budget to campaigns/channels which attribute to conversions both directly and indirectly.
