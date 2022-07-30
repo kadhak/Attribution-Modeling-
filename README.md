@@ -79,8 +79,9 @@ Objective of the Project:
 1.	To predict conversion using logistic regression and use regression coefficients as attribution weights for marketing budget allocation. 
 2.	To compare weights of traditionally used Last touch attribution model against data driven model (logistic regression)
 3.	Evaluate return on investment (ROI) for each of these models
-Collection and Preliminary Analysis of Data:
-Data is obtained from Criteo . The data represents live 30 days live traffic. Each record corresponds to an impression that is displayed to user. Each of these impressions consist of information about context, if it was clicked, if it led to conversion, if the conversion was attributed to Criteo or not. 
+
+Collection and Preliminary Analysis of Data:(http://ailab.criteo.com/criteo-attribution-modeling-bidding-dataset/)
+Data is obtained from Criteo. The data represents live 30 days live traffic. Each record corresponds to an impression that is displayed to user. Each of these impressions consist of information about context, if it was clicked, if it led to conversion, if the conversion was attributed to Criteo or not. 
 We will train and tes our models using an online advertising dataset published by Criteo (Lab, 2017). This data consist of 16 million impressions (events), each of which has multiple variables
 
 Data Models:
