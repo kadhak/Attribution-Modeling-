@@ -18,15 +18,8 @@ There are many attribution models available. Each model has a different distribu
 •	First Touch Attribution: As the name suggests, this model gives 100% credit to the first touchpoint. It assumes that the customer chose to convert after the first impression, even though the customer may have encountered other campaigns later. 
 
 •	Last touch Attribution: Similarly, the last touch attribution model gives 100% credit to the last touchpoint of the customer, before they convert. This doesn’t account for the previous touchpoints that lead to the final touchpoint. 
-
-
-
-![Picture2](https://user-images.githubusercontent.com/37044895/181918417-79f588b0-10ca-4819-914e-37bc570cc4b0.png)
-              Figure 2: First Touch Attribution Model	   
-              ![Picture3](https://user-images.githubusercontent.com/37044895/181918429-cfb13a04-943e-4ff6-88d0-eaee9050ddf0.png)
-
-              Figure 3: Last Touch Attribution Model
-
+![Picture2](https://user-images.githubusercontent.com/37044895/181918417-79f588b0-10ca-4819-914e-37bc570cc4b0.png) ![Picture3](https://user-images.githubusercontent.com/37044895/181918429-cfb13a04-943e-4ff6-88d0-eaee9050ddf0.png)
+Figure 2: First Touch Attribution Model	    Figure 3: Last Touch Attribution Model
 Limitations
 The single touch attribution models, although easy to comprehend and measure, have their own set of limitations. The consumer buying journey is seldom as simple as assumed by these models. The consumer has multiple touchpoints across different channels and different campaigns before they convert. In such a case, the single touch attribution model fails to correctly credit the touchpoints which were influential in the customer decision, as it chooses to attribute 100% credit to a single touchpoint. This also leads to wrong budget allocations and hence lower return on ad spend. (Sovik, n.d.)
 
