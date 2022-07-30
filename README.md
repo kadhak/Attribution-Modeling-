@@ -140,9 +140,15 @@ Insights and Recommendations:
 References:
 
 Lord, J. (2012, November 27). The Importance of Marketing Analytics. Retrieved from moz.com: https://moz.com/blog/the-importance-of-marketing-analytics
+
 Marketing analytics: definition and uses. (n.d.). Retrieved from stitchdata.com: https://www.stitchdata.com/resources/marketing-analytics/#:~:text=Benefits%20of%20marketing%20analytics&text=Marketing%20analytics%20tools%20improve%20lead,into%20customer%20behavior%20and%20preferences.
+
 Marketing Attribution: A Guide to Models, Tools, and Strategy. (n.d.). Retrieved from marketingevolution: https://www.marketingevolution.com/marketing-essentials/marketing-attribution
+
 Rheinlander, S. (n.d.). "Everything you wanted to know about marketing attribution models". Retrieved from salesforce.com: https://www.salesforce.com/blog/what-is-marketing-attribution-model/
+
 Shang, J. (2021, December 1). A Beginner's Guide to Data Driven Attribution. Retrieved from adroll.com: https://www.adroll.com/blog/a-beginners-guide-to-data-driven-attribution
+
 Mohod, H. S. (2020). https://github.com/mohodhruda. 
+
 Shao X. and Li L. (2011). Data-Driven Multi-Touch Attribution Models, 2011. http://wnzhang.net/share/rtb-papers/data-conv-att.pdf.
